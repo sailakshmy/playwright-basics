@@ -1,0 +1,23 @@
+{
+  "name": "playwright-basics",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sailakshmy/playwright-basics.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sailakshmy/playwright-basics/issues"
+  },
+  "homepage": "https://github.com/sailakshmy/playwright-basics#readme",
+  "description": "",
+  "dependencies": {
+    "playwright": "^1.53.1"
+  }
+}
