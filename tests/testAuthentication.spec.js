@@ -2,13 +2,13 @@ const { chromium } = require("playwright");
 const { test, expect } = require("@playwright/test");
 
 test.describe("Test suite 1", () => {
-  test("Test 1", async () => {
-    const browser = await chromium.launch();
-    const page = await browser.newPage();
+  test("Test 1", async ({ page }) => {
+    // const browser = await chromium.launch();
+    // const page = await browser.newPage();
     await authenticate(page);
     await prepareOrder(page);
     await placeOrder(page);
-    await browser.close();
+    // await browser.close();
   });
 });
 
