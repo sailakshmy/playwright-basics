@@ -1,11 +1,14 @@
 const { chromium } = require("playwright");
+const { test } = require("@playwright/test");
 
-(async () => {
-  const browser = await chromium.launch();
-  const page = await browser.newPage();
-  await authenticate(page);
-  await browser.close();
-})();
+test.describe("Test suite 1", () => {
+  test("Test 1", async () => {
+    const browser = await chromium.launch();
+    const page = await browser.newPage();
+    await authenticate(page);
+    await browser.close();
+  });
+});
 
 const authenticate = async (page) => {
   await page.goto("https://bitheap.tech");
